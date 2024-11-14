@@ -1,0 +1,1678 @@
+/* globel css  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #201D20;
+}
+
+/* navbar css */
+.top-navbar {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all 1s;
+    background-color: #030404;
+}
+
+.navbar {
+    padding: 0vw 10vw;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    padding: .5vw 0;
+    width: 70%;
+    cursor: pointer;
+    animation: fadeInDown 2s;
+}
+
+.nav {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.nav a .effect {
+    width: 1vw;
+    height: 1vw;
+}
+
+.nav a li {
+    padding: 0.5vw 1.5vw;
+    font-style: normal;
+    font-size: 0.9vw;
+    font-weight: 200;
+    line-height: 2vw;
+    color: #c5bcbc;
+    transition: all 0.5s;
+    border-radius: 1vw;
+    list-style: none;
+}
+
+.nav .button {
+    padding: 0.5vw 1.5vw;
+    font-style: normal;
+    font-size: 1.1vw;
+    font-weight: 600;
+    line-height: 2vw;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #F8F8FD;
+    border-radius: 1vw;
+    transition: all 0.5s;
+}
+
+.nav .button:hover {
+    transform: translateY(-0.5vw);
+    border-color: #10b826;
+    color: #000000;
+    background: #B7FF8D;
+}
+
+.nav a:hover {
+    background: #B7FF8D;
+    border-color: #10b826;
+    position: relative;
+    border-radius: 1vw;
+    top: -0.5vw;
+    animation: all 2s;
+}
+
+.nav li:hover {
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.menu-icon{
+    display: none;
+}
+
+/* ghost section css */
+.skull {
+    width: 100%;
+    height: auto;
+    padding: 0vw 10% 0 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -2vw;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skull .left {
+    color: #FFFFFF;
+    padding-left: 2%;
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    z-index: 100;
+}
+.skull .left h3 {
+    line-height: 2vw;
+    margin-bottom: 1vw;
+    font-weight: 900;
+}
+
+.left h2 {
+    font-size: 4.5vw;
+    line-height: 100%;
+    opacity: 1;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 3s;
+}
+
+h2:hover {
+    background-position: 0 0;
+}
+.skull .left p {
+    font-size: 15px;
+    color: #e4dcdc;
+    text-align: unset;
+    opacity: 1;
+    font-weight: 400;
+    line-height: 2vw;
+}
+
+.skull .left a {
+    width: 35%;
+    height: auto;
+    text-align: center;
+    transition: all 1s;
+    list-style: none;
+}
+
+.skull .left a img {
+    width: 100%;
+}
+
+.skull .left a li {
+    font-size: 1vw;
+    color: #303056;
+    font-weight: 600;
+    margin-top: -4vw;
+    transition: all 1s;
+}
+
+.skull .left a:hover li {
+    color: #000000;
+}
+
+.skull .left a:hover {
+    margin-top: -1vw;
+    width: 34%;
+}
+
+.skull .bg {
+    width: 65%;
+    height: auto;
+    overflow: visible;
+}
+
+.skull .bg img {
+    width: 70vw;
+    animation: fadeOut 4s;
+    animation-iteration-count: infinite;
+}
+
+/* about section css */
+.about {
+    width: 100%;
+    padding: 6vw 20vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-top {
+    border-top: rgb(70, 68, 68) solid 2px;
+    margin-top: vw;
+}
+
+.about-center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5vw;
+    text-align: center;
+    color: #FFFFFF;
+    border-left: rgb(70, 68, 68) solid 2px;
+    border-right: rgb(70, 68, 68) solid 2px;
+    border-bottom: rgb(70, 68, 68) solid 2px;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    background: linear-gradient(123.89deg, #242424 5.28%, #000000 111.77%);
+    box-shadow: 0px 4px 52px rgba(255, 255, 255, 0.07);
+    gap: 2vw;
+}
+
+.us {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 14vw;
+}
+
+.us h2 {
+    font-size: 45px;
+}
+
+.about-center h1 {
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.about-center p {
+    width: 100%;
+    font-size: 17.8px;
+    font-weight: 500;
+    line-height: 1.9vw;
+}
+
+.about hr {
+    padding-top: 3vw;
+    border: rgb(70, 68, 68) solid 2px;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    background: linear-gradient(123.89deg, #242424 5.28%, #000000 111.77%);
+    box-shadow: 0px 4px 52px rgba(255, 255, 255, 0.07);
+}
+
+/* Our Technology section css */
+.our-technology {
+    display: flex;
+    padding: 0vw 10vw;
+    padding-top: 25vw;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2vw;
+}
+
+.left-technology {
+    width: 68%;
+    color: #FFFFFF;
+}
+
+.left-technology h1 {
+    font-size: 50px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.left-technology p {
+    font-size: 15px;
+    line-height: 2vw;
+    font-weight: 400;
+    color: rgb(199, 192, 192);
+}
+
+.right-technology {
+    width: 100%;
+    margin-top: -25vw;
+}
+
+/* pricing section css */
+.pricing {
+    width: 100%;
+    padding: 3vw 20vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 5vw;
+}
+
+.top-pricing {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.top-pricing h1 {
+    font-size: 50px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.top-pricing p {
+    width: 100%;
+    color: #cfcbcb;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 2vw;
+}
+
+.center-pricing {
+    padding: 0vw 19.3vw;
+}
+
+.bottom-pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    width: 100%;
+    padding-left: 4vw;
+    padding: 0.5vw 0.5vw;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: #292729 solid 1px;
+    border-radius: 0.9vw;
+}
+
+.bottom-pricing a {
+    width: 10vw;
+    padding: 0.8vw;
+    border-radius: 0.8vw;
+    color: #cfcbcb;
+}
+
+.bottom-pricing a:nth-child(1) {
+    background: #3C3036;
+}
+
+.bottom-pricing a:nth-child() {
+    background: #3C3036;
+}
+
+.monthly {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    gap: 3vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.monthly1 {
+    padding: 4vw 5.3vw;
+    text-align: center;
+    color: #f8f8f8;
+    background: linear-gradient(123.89deg, #000000 5.28%, #242424 111.77%);
+    border-radius: 1.5vw;
+}
+
+.monthly1 p {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.weekly {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    gap: 3.8vw;
+    color: #FFFFFF;
+}
+
+/* buy-back section css */
+.buy-back {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 15vw 5vw;
+    padding: 0vw 5vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rocket {
+    width: 70%;
+}
+
+/* .buy-back:hover .rocket img{
+    animation: fadeInUp 4s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: fadeInUp;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+} */
+
+
+.right-buy-back {
+    width: 50%;
+    padding-top: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+}
+
+.right-buy-back h1 {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 3.5vw;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.right-buy-back p {
+    width: 90%;
+    font-size: 15.53px;
+    color: #cfcbcb;
+    line-height: 2vw;
+    justify-content: flex-start;
+    font-weight: 400;
+}
+
+.right-buy-back a li {
+    list-style: none;
+    padding: 4.5vw;
+    color: #303056;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: -9vw;
+    transition: 0.5s;
+}
+
+/* Roadmap section css */
+.roadmap1 {
+    width: 100%;
+    padding: 17vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-roadmap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vw;
+    padding: 0vw 10vw;
+}
+
+.top-roadmap h1 {
+    font-size: 50px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 3s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.top-roadmap p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2vw;
+    color: #e4dddd;
+}
+
+/* bottom-roadmap section css */
+.bottom-roadmap {
+    position: relative;
+    max-width: 100%;
+    margin: 100px auto;
+}
+
+.roadmap {
+    padding: 0vw;
+    position: relative;
+    width: 45%;
+    padding: 1vw;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-0px);
+    }
+}
+
+.roadmap:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.roadmap:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.roadmap:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.roadmap:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.textbox {
+    position: relative;
+    padding: 4vw;
+    background: linear-gradient(123.89deg, #000000 5.28%, #242424 111.77%);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    border-radius: 2vw;
+}
+
+.roadmap h3 {
+    font-size: 1.4vw;
+    line-height: 2.5vw;
+    color: #FFFFFF;
+    margin-bottom: 1.5vw;
+}
+
+.roadmap h2 {
+    font-size: 2vw;
+    text-align: initial;
+}
+
+.textbox li {
+    font-family: 'Quicksand', sans-serif;
+    list-style-type: disc;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    color: #ffffff;
+    opacity: .6;
+}
+
+.left-roadmap {
+    left: 0;
+}
+
+.left-roadmap:after {
+    content: "";
+    width: 39%;
+    height: 95%;
+    background-color: #250D50;
+    position: absolute;
+    top: 2.3%;
+    left: 59%;
+    border-radius: 1vw;
+    border: 3px solid;
+    border-color: #A7DE93;
+    border-left: none;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.left-roadmap:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 2.25vw;
+    background: #2E292C;
+    top: 47%;
+    left: 102%;
+    transform: rotate(90deg);
+}
+
+.right-roadmap {
+    left: 50%;
+}
+
+.right-roadmap:after {
+    content: "";
+    width: 40%;
+    height: 95%;
+    background-color: #250D50;
+    position: absolute;
+    top: 2.3%;
+    left: 1%;
+    border-radius: 1vw;
+    border: 3px solid;
+    border-color: #A7DE93;
+    border-right: none;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.right-roadmap:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 1.97vw;
+    background: #2E292C;
+    top: 47%;
+    left: -2.75%;
+    transform: rotate(90deg);
+}
+
+.bottom-roadmap:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 81vw;
+    border-radius: 8px;
+    background: #2E292C;
+    top: 10%;
+    left: 47.5%;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    75% {
+        height: 75;
+    }
+}
+
+/* join section css */
+.join {
+    width: 100%;
+    padding: 0vw 20vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-join {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+    border-radius: 1.5vw;
+    gap: 2vw;
+    text-align: center;
+    background: linear-gradient(180deg, #A7DE93 0%, rgba(77, 71, 75, 0) 100%);
+}
+
+.center-join h1 {
+    font-size: 50px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 3s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.center-join p {
+    width: 100%;
+    padding: 0vw 5.5vw;
+    font-size: 18px;
+    font-weight: 500;
+    color: #e4dcdc;
+    line-height: 2vw;
+}
+
+/* logo-links section css */
+.logo-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5vw 10vw;
+    gap: 6vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-para {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 17px;
+    line-height: 2vw;
+    font-weight: 500;
+    gap: 1vw;
+    color: #f5efef;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 4vw;
+}
+
+.links a p {
+    color: #e0dada;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2vw;
+}
+
+.links a:hover p {
+    text-decoration: underline;
+}
+.logo2-links2{
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+.roadmap-2 {
+    color: #e0dada;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2vw;
+    margin-top: 4vw;
+}
+
+.roadmap-2 a p {
+    color: #e0dada;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2vw;
+}
+
+.roadmap-2 a:hover p {
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+}
+
+.socials .logo-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+
+.socials img {
+    width: 3vw;
+    height: auto;
+    padding: 0.1vw;
+    transition: all 0.3s;
+}
+
+.socials a:hover img {
+    border: 1px solid #ffffff;
+    border-radius: 3vw;
+}
+
+@media (max-width:1300px) {
+    /* .navbar section css 1300px */
+    .nav a li{
+        font-size: 13px;
+    }
+    /* .ghost section css 1300px */
+    .skull h3{
+        font-size: 15px;
+    }
+    /* .about section css 1300px */
+    .about-center h1{
+        font-size: 30px;
+    }
+    .us h2{
+        font-size: 30px;
+    }
+    .about-center p{
+        font-size: 14px;
+    }
+    /* .our-technology section css 1300px */
+    .left-technology h1{
+        font-size: 30px;
+    }
+    .left-technology p{
+        font-size: 14px;
+    }
+    .right-technology{
+        margin-top: -19vw;
+    }
+    /* .pricing section css 1300px */
+    .top-pricing h1{
+        font-size: 30px;
+    }
+    .top-pricing p{
+        font-size: 14px;
+    }
+    /* .buy-back section css 1300px */
+    .right-buy-back h1{
+        font-size: 40px;
+    }
+    .right-buy-back a li{
+        margin-top: -9.5vw;
+        font-size: 13px;
+    }
+    /* .roadmap section css 1300px */
+    .top-roadmap h1{
+        font-size: 40px;
+    }
+    .top-roadmap p{
+        font-size: 14px;
+    }
+    /* .join section css 1300px */
+    .join h1{
+        font-size: 35px;
+    }
+    .join p{
+        font-size: 14px;
+    }
+    .links h2{
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .links a p{
+        line-height: 2.5vw;
+    }
+    .roadmap-2 a p{
+        line-height: 2.5vw;
+    }
+}
+
+@media (max-width:980px) {
+    top-navbar {
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        position: fixed;
+        transition: all 1s;
+        background-color: #10b826;
+    }
+    
+    .navbar {
+        padding: 0vw 10vw;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .logo {
+        width: 20%;
+    }
+    
+    .logo img {
+        padding: .5vw 0;
+        width: 70%;
+        cursor: pointer;
+        animation: fadeInDown 2s;
+    }
+    
+    .nav {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1vw;
+    }
+    
+    .nav a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5vw;
+    }
+    
+    .nav a .effect {
+        width: 1vw;
+        height: 1vw;
+    }
+    
+    .nav a li {
+        padding: 0.5vw 1.5vw;
+        font-style: normal;
+        font-size: 9px;
+        font-weight: 200;
+        line-height: 2vw;
+        color: #c5bcbc;
+        transition: all 0.5s;
+        border-radius: 1vw;
+        list-style: none;
+    }
+    
+    .nav .button {
+        padding: 0.5vw 1.5vw;
+        font-style: normal;
+        font-size: 7px;
+        font-weight: 600;
+        line-height: 2vw;
+        color: #ffffff;
+        background: transparent;
+        border: 1px solid #F8F8FD;
+        border-radius: 1vw;
+        transition: all 0.5s;
+    }
+    
+    .nav .button:hover {
+        transform: translateY(-0.5vw);
+        border-color: #10b826;
+        color: #000000;
+        background: #B7FF8D;
+    }
+    
+    .nav a:hover {
+        background: #B7FF8D;
+        border-color: #10b826;
+        position: relative;
+        border-radius: 1vw;
+        top: -1vw;
+        animation: all 2s;
+    }
+    
+    .nav li:hover {
+        color: #000000;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
+    .menu-icon{
+        display: none;
+    }
+    /* ghost section css 960px */
+    .skull {
+        width: 100%;
+        height: auto;
+        padding: 5vw 10% 0 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -2vw;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .skull .left {
+        color: #FFFFFF;
+        padding-left: 2%;
+        width: 35%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        z-index: 100;
+    }
+    .skull .left h3 {
+        font-size: 10px;
+        line-height: 2vw;
+        margin-bottom: 1vw;
+        font-weight: 900;
+    }
+    
+    .left h2 {
+        font-size: 4.5vw;
+        line-height: 100%;
+        opacity: 1;
+        font-weight: 900;
+        background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        transition: all 3s;
+    }
+    
+    h2:hover {
+        background-position: 0 0;
+    }
+    .skull .left p {
+        font-size: 12px;
+        color: #e4dcdc;
+        text-align: unset;
+        opacity: 1;
+        font-weight: 400;
+        line-height: 2vw;
+    }
+    
+    .skull .left a {
+        width: 35%;
+        height: auto;
+        text-align: center;
+        transition: all 1s;
+        list-style: none;
+    }
+    
+    .skull .left a img {
+        width: 100%;
+    }
+    
+    .skull .left a li {
+        font-size: 1vw;
+        color: #303056;
+        font-weight: 600;
+        margin-top: -4vw;
+        transition: all 1s;
+    }
+    
+    .skull .left a:hover li {
+        color: #000000;
+    }
+    
+    .skull .left a:hover {
+        margin-top: -1vw;
+        width: 34%;
+    }
+    
+    .skull .bg {
+        width: 65%;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .skull .bg img {
+        width: 70vw;
+        animation: fadeOut 4s;
+        animation-iteration-count: infinite;
+    }
+ /* about section css 980px  */
+.about {
+    width: 100%;
+    padding: 6vw 25vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-top {
+    border-top: rgb(70, 68, 68) solid 2px;
+    margin-top: 0vw;
+}
+
+.about-center {
+    width: 100%;
+    padding: 5vw;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #171716;
+    border-left: rgb(70, 68, 68) solid 2px;
+    border-right: rgb(70, 68, 68) solid 2px;
+    border-bottom: rgb(70, 68, 68) solid 2px;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.us {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 14vw;
+}
+
+.us h2 {
+    font-size: 15px;
+}
+
+.about-center h1 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 800;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.about-center p {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.9vw;
+}
+
+.about hr {
+    padding-top: 3vw;
+    background-color: #171716;
+    border: rgb(70, 68, 68) solid 2px;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+}   
+/* Our Technology section css 980px */
+.our-technology {
+    display: flex;
+    padding: 0vw 10vw;
+    padding-top: 25vw;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 3vw;
+}
+
+.left-technology {
+    width: 68%;
+    color: #FFFFFF;
+}
+
+.left-technology h1 {
+    font-size: 22px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 2s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.left-technology p {
+    font-size: 9px;
+    line-height: 2vw;
+    font-weight: 800;
+    color: rgb(199, 192, 192);
+}
+
+.right-technology {
+    width: 100%;
+    margin-top: -18vw;
+}
+/* .pricing section css 980px */
+.pricing {
+    width: 100%;
+    padding: 6vw 20vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 5vw;
+}
+
+.top-pricing {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.top-pricing h1 {
+    font-size: 30px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.top-pricing p {
+    width: 100%;
+    color: #cfcbcb;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 3vw;
+}
+
+.center-pricing {
+    padding: 0vw 12vw;
+}
+
+.bottom-pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    width: 100%;
+    padding-left: 4vw;
+    padding: 0.5vw 0.5vw;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    border: #292729 solid 1px;
+    border-radius: 2vw;
+}
+
+.bottom-pricing a {
+    width: 17vw;
+    padding: 0.8vw;
+    border-radius: 1.5vw;
+    color: #cfcbcb;
+}
+
+.bottom-pricing a:nth-child(1) {
+    background: #3C3036;
+}
+
+.bottom-pricing a:nth-child() {
+    background: #3C3036;
+}
+
+.monthly {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    gap: 3vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.monthly1 {
+    padding: 3vw 5vw;
+    text-align: center;
+    color: #f8f8f8;
+    background: linear-gradient(123.89deg, #000000 5.28%, #242424 111.77%);
+    border-radius: 1.5vw;
+}
+.monthly1 h2{
+    font-size: 15px;
+}
+.monthly1 p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.weekly {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    gap: 3.8vw;
+    color: #FFFFFF;
+}
+/* buy-back section css  980px */
+.buy-back {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 15vw 5vw;
+    padding: 0vw 5vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rocket {
+    width: 70%;
+    padding-top: 2vw;
+}
+.right-buy-back {
+    width: 50%;
+    padding-top: 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+}
+
+.right-buy-back h1 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 4vw;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 4s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.right-buy-back p {
+    width: 100%;
+    font-size: 11px;
+    color: #cfcbcb;
+    line-height: 2vw;
+    justify-content: flex-start;
+    font-weight: 400;
+}
+.right-buy-back img{
+    width: 45%;
+}
+.right-buy-back a li {
+    list-style: none;
+    padding: 4.4vw;
+    color: #303056;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -11vw;
+    transition: 0.5s;
+}
+/* .roadmap section css 980px  */
+.roadmap1 {
+    width: 100%;
+    padding: 17vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-roadmap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2vw;
+    padding: 0vw 10vw;
+}
+
+.top-roadmap h1 {
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 3s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.top-roadmap p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2vw;
+    color: #e4dddd;
+}
+/* join section css 980px */
+.join {
+    width: 100%;
+    padding: 0vw 20vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-join {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    border-radius: 3vw;
+    gap: 2vw;
+    text-align: center;
+    background: linear-gradient(180deg, #A7DE93 0%, rgba(77, 71, 75, 0) 100%);
+}
+
+.center-join h1 {
+    font-size: 25px;
+    font-weight: 900;
+    background: linear-gradient(to right, #B7FF8D 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 3s;
+}
+
+h1:hover {
+    background-position: 0 0;
+}
+
+.center-join p {
+    width: 100%;
+    padding: 0vw 5.5vw;
+    font-size: 10px;
+    font-weight: 600;
+    color: #e4dcdc;
+    line-height: 2vw;
+}
+/* logo-links section css 980px */
+.logo-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5vw 10vw;
+    gap: 6vw;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-para {
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    width: 45%;
+    font-size: 17px;
+    line-height: 2vw;
+    font-weight: 500;
+    gap: 1vw;
+    color: #f5efef;
+
+}
+.image-para img{
+    width: 100%;
+}
+.image-para p{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 4vw;
+}
+.links h2{
+    font-size: 17px;
+}
+.links a p {
+    color: #e0dada;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 4vw;
+}
+
+.links a:hover p {
+    text-decoration: underline;
+}
+.logo2-links2{
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 8vw;
+    gap: 14vw;
+}
+.roadmap-2 {
+    color: #e0dada;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2vw;
+    margin-top: 4vw;
+}
+
+.roadmap-2 a p {
+    color: #e0dada;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 4vw;
+}
+
+.roadmap-2 a:hover p {
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+}
+
+.socials .logo-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+
+.socials img {
+    width: 3vw;
+    height: auto;
+    padding: 0.1vw;
+    transition: all 0.3s;
+}
+
+.socials a:hover img {
+    border: 1px solid #ffffff;
+    border-radius: 3vw;
+}
+
+jk    
+}
+
+ @media (max-width:600px) {
+    /* navbar section css 600px */
+    .nav a, li{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 40px;
+        color: #FFFFFF;
+        font-weight: 900;
+        padding: 0vw 3vw;
+    }
+    .logo{
+        width: 65%;
+    }
+    
+    .navbar-toggle span {
+        display: block;
+        width: 5vw;
+        height: 1vw;
+        margin: 0.7vw;
+        background: linear-gradient(271.36deg, #ffffff 50.01%, #ffffff 72.39%);
+        border-radius: 50px;
+        transition: all 0.5s;
+    }
+    
+    .navbar-toggle span:nth-child(2) {
+        width: 3.5vw;
+    }
+    
+    .navbar-toggle {
+        display: block;
+      }
+      
+      .navbar-toggle.active span:nth-child(1) {
+        transition-delay: 0.1s;
+        transform: rotate(45deg) translate(1.3vw, 1.3vw);
+      }
+      
+      .navbar-toggle.active span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .navbar-toggle.active span:nth-child(3) {
+        transition-delay: 0.1s;
+        transform: rotate(-45deg) translate(0vw, 0vw);
+        position: relative;
+        top: -1.6vw;
+      }
+    /* ghost section css 600px */
+    .skull .left {
+        padding-left: 2%;
+        width: 40%;
+        gap: 3vw;
+    }
+    
+    .skull .left p {
+        font-size: 1.4vw;
+    }
+    
+    .skull .left a li {
+        font-size: 1.4vw;
+        margin-top: -5vw;
+    }
+    
+    .skull .bg {
+        width: 60%;
+    }
+    
+    .scroller .links-tip {
+        gap: 3vw;
+        position: fixed;
+        top: 0vw;
+        right: 6vw;
+    }
+    
+    .tip1 {
+        top: 27.5vw;
+        right: 6.5vw;
+    }
+    
+    .tip2 {
+        top: 31vw;
+        right: 6.5vw;
+    }
+    
+    .tip3 {
+        top: 35vw;
+        right: 6.5vw;
+    }
+    
+    .tip4 {
+        top: 39.75vw;
+        right: 6.5vw;
+    }
+    
+    .tip5 {
+        top: 43.25vw;
+        right: 6.5vw;
+    }
+    
+    .scroller .links {
+        gap: 2.5vw;
+        position: fixed;
+        top: 28vw;
+        right: 5vw;
+        z-index: 1000;
+    }
+    
+    .scroll {
+        font-size: 1.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
